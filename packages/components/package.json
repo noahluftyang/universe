@@ -1,0 +1,21 @@
+{
+  "name": "@noahluftyang/components",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "types": "./src/index.d.ts",
+    "default": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "@mantine/core": "^7.8.1",
+    "@mantine/hooks": "^7.8.1"
+  },
+  "peerDependencies": {
+    "react": ">= 18",
+    "react-dom": ">= 18"
+  }
+}
