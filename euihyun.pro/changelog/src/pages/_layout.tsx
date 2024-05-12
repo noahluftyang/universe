@@ -1,6 +1,8 @@
+import '@mantine/core/styles.css';
+
+import { MantineProvider } from '@mantine/core';
 import type { ReactNode } from 'react';
-import { Footer } from '../components/footer';
-import { Header } from '../components/header';
+import { Screen } from '../components/screen';
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   const data = await getData();
@@ -9,9 +11,9 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     <>
       <meta property="description" content={data.description} />
       <link rel="icon" type="image/png" href={data.icon} />
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <MantineProvider>
+        <Screen>{children}</Screen>
+      </MantineProvider>
     </>
   );
 }
@@ -25,8 +27,8 @@ const getData = async () => {
   return data;
 };
 
-export const getConfig = async () => {
+export async function getConfig() {
   return {
     render: 'static',
   };
-};
+}
