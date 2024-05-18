@@ -3,16 +3,40 @@
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
-  "exports": {
-    "types": "./src/index.d.ts",
-    "default": "./src/index.js"
-  },
+  "exports": "./src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "build:storybook": "storybook build",
+    "dev:storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@mantine/core": "^7.8.1",
-    "@mantine/hooks": "^7.8.1"
+    "@mantine/hooks": "^7.8.1",
+    "@mui/base": "5.0.0-beta.40",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@stylexjs/stylex": "^0.6.1",
+    "@tamagui/core": "^1.98.1",
+    "@vanilla-extract/css": "^1.15.1",
+    "valibot": "^0.30.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.4.0",
+    "@pandacss/dev": "^0.39.1",
+    "@storybook/addon-essentials": "^8.1.1",
+    "@storybook/addon-interactions": "^8.1.1",
+    "@storybook/addon-links": "^8.1.1",
+    "@storybook/addon-onboarding": "^8.1.1",
+    "@storybook/blocks": "^8.1.1",
+    "@storybook/react": "^8.1.1",
+    "@storybook/react-vite": "^8.1.1",
+    "@storybook/test": "^8.1.1",
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta",
+    "@vanilla-extract/vite-plugin": "^4.0.9",
+    "react": "19.0.0-rc-3f1436cca1-20240516",
+    "react-dom": "19.0.0-rc-3f1436cca1-20240516",
+    "storybook": "^8.1.1",
+    "vite-plugin-stylex": "^0.8.3",
+    "vite-plugin-stylex-dev": "^0.7.5"
   },
   "peerDependencies": {
     "react": ">= 18",
