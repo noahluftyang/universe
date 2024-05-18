@@ -2,6 +2,7 @@
   "extends": "@tsconfig/strictest",
   "compileOnSave": false,
   "compilerOptions": {
+    "checkJs": false,
     "moduleResolution": "node16"
   }
 }

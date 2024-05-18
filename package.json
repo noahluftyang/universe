@@ -8,18 +8,21 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.2",
+    "@biomejs/biome": "^1.7.3",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/config-pnpm-scopes": "^19.1.0",
     "@commitlint/types": "^19.0.3",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.12",
+    "eslint": "^9.3.0",
+    "eslint-plugin-react-compiler": "0.0.0-experimental-c8b3f72-20240517",
+    "globals": "^15.2.0",
     "husky": "^9.0.11",
-    "knip": "^5.11.0",
+    "knip": "^5.16.0",
     "turbo": "^1.13.3",
     "typescript": "^5.4.5"
   },
   "workspaces": ["euihyun.pro/*", "packages/*"],
-  "packageManager": "pnpm@9.0.6"
+  "packageManager": "pnpm@9.1.1"
 }
